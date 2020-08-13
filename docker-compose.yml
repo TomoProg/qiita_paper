@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    container_name: qiita_paper_app
+    volumes:
+      - ./app:/app
+    tty: true
+    working_dir: "/app"
+
